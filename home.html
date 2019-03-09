@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Home</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Nunito:200i,400" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Dancing+Script:700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,700" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.12/css/all.css" integrity="sha384-G0fIWCsCzJIMAVNQPfjH08cyYaUtMwjJwqiRKxxE/rx96Uroj1BtIQ6MLJuheaO9"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="wizytówka2.css">
+
+
+
+</head>
+
+<body>
+    <div class="bar"></div>
+
+    <header>
+        <nav class="navigation">
+            <button id="hamburger" type="button"><i class="fas fa-bars"></i></button>
+            <ul class="navigation-menu">
+                <li><a href="home.html">Home</a></li>
+                <li><a href="#me">O mnie</a></li>
+                <li><a href="#skills">Umiejętności</a></li>
+                <li><a href="contact.html">Kontakt</a></li>
+                <li><a href="portfolio.html">Moje projekty</a></li>
+            </ul>
+        </nav>
+        <h1>Anna Matuła</h1>
+        <h1>front-end developer</h1>
+        <img src="undraw_programmer_imem.svg" alt="programmer">
+    </header>
+    <div id="me" class="bar"></div>
+    <article class="me">
+        <img src="ja.jpg" alt="my photo">
+        <blockquote>Jakiś czas temu postanowiłam w pewnym sensie zmienić swoje życie i
+            podjęłam
+            decyzję o
+            przebrażowieniu. Zaczęłam zajmować się programowaniem stron i aplikacji webowych.
+            Wzięłam również udział w największym otwartym kursie programowania webowego CodersCamp
+            organizowanego przez CodersCrew. W najbliższej przyszłości chciałabym pracować jako
+            Front-end Developer, aby móc rozwinąć umiejętności, które zdobyłam do tej pory i zdobywać te nowe.
+        </blockquote>
+        <p><strong>Anna Matuła</strong> -Frontend Developer</p>
+    </article>
+    <div id="skills" class="bar"></div>
+    <article class="skills">
+        <div>
+            <i class="devicon-html5-plain icon"></i>
+            <i class="devicon-css3-plain icon"></i>
+            <i class="devicon-javascript-plain icon"></i>
+            <i class="devicon-bootstrap-plain icon"></i>
+            <i class="devicon-jquery-plain icon"></i>
+            <i class="devicon-git-plain icon"></i>
+        </div>
+    </article>
+    <div class="bar"></div>
+    <footer>
+        <span> &copy 2019 Anna Matuła. All rights reserved.</span>
+        <img src="CodersCrew.jpg" alt="logo CodersCrew">
+
+        <script>
+            function classToggle() {
+                this.classList.toggle('active');
+                var el = document.getElementsByClassName('navigation-menu');
+
+                // el[0].style.backgroundColor = "red";
+                // console.log(el);
+            }
+            document.querySelector('#hamburger').addEventListener('click', classToggle);
+        </script>
+
+</body>
+
+</html>

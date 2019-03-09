@@ -1,0 +1,377 @@
+html {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Nunito', sans-serif;
+    font-size: 1.6rem;
+    color: #62717E;
+}
+
+header {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #ebebeb;
+}
+
+.navigation {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #ebebeb;
+}
+
+.navigation-menu li {
+    display: inline;
+    list-style: none;
+    padding: 30px;
+}
+
+.navigation-menu li a {
+    text-decoration: none;
+    font-family: 'Playfair Display', serif;
+    font-weight: bold;
+    color: #405263;
+    transition: 0.5s;
+}
+
+.navigation a:hover {
+    text-decoration: underline;
+    color: #9c27b0;
+}
+
+#hamburger {
+    display: none;
+
+}
+
+#hamburger:active {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start
+}
+
+@media (min-width:768px) {
+    .navigation-menu {
+        display: block !important;
+
+
+    }
+}
+
+@media (max-width:767px) {
+    .navigation {
+        width: 100%;
+        display: table-column;
+        background-color: #79699e;
+    }
+
+    .navigation-menu {
+        display: none;
+
+        transition: all 1.3s ease;
+    }
+
+    #hamburger {
+        margin: 0;
+        display: flex;
+        align-self: flex-start;
+        background-color: #79699e;
+        padding: 10px;
+        color: #fff;
+        border: none;
+        margin: 6px 8px 8px 8px;
+        font-size: 1.6rem;
+        outline: none;
+    }
+
+    #hamburger.active+.navigation-menu {
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        background-color: #79699e;
+    }
+
+    #hamburger.active+.navigation-menu li a {
+        color: #fff;
+    }
+}
+
+.bar {
+    height: 4px;
+    background-color: #79699e;
+}
+
+header h1,
+h2 {
+    text-align: center;
+    font-family: 'Playfair Display', serif;
+
+}
+
+header h1 {
+    font-size: 3.5rem;
+    letter-spacing: 0.2em;
+    padding-top: 3rem;
+    font-weight: 600;
+    color: #405263;
+}
+
+header h2 {
+    font-size: 3rem;
+    letter-spacing: 0.2em;
+    padding-top: 2rem;
+    font-weight: 500;
+
+}
+
+header img {
+    width: 75%;
+    max-width: 980px;
+
+}
+
+.me {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(172, 147, 231);
+}
+
+.me img {
+    display: flex;
+    align-self: center;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 5px solid #fff;
+
+}
+
+.me blockquote {
+    color: #fff;
+    font-size: 2rem;
+    font-style: italic;
+    line-height: 2.5rem;
+    opacity: .8;
+    width: 90%;
+    text-align: center;
+}
+
+@media screen and (min-width: 980px) {
+
+    article.me blockquote {
+        width: 800px;
+    }
+}
+
+article.me p {
+    color: #fff;
+    font-size: 2rem;
+}
+
+article.me strong {
+    color: #9c27b0;
+    font-family: 'Dancing Script', cursive;
+    font-size: 2rem;
+}
+
+.skills {
+    background-color: #ebebeb;
+    display: flex;
+    justify-content: center;
+}
+
+.skills>div {
+    color: #405263;
+    display: flex;
+    align-items: center;
+    flex-flow: column wrap;
+}
+
+.skills div i {
+    color: #405263;
+    font-size: 8rem;
+    padding: 60px 80px;
+}
+
+@media (min-width:768px) {
+    .skills>div {
+        flex-flow: row wrap;
+        max-width: 768px;
+    }
+}
+
+.two h2,
+.three h2 {
+    margin-top: 8rem;
+}
+
+article.contact {
+    display: flex;
+    background-color: rgb(172, 147, 231);
+}
+
+article.contact>div {
+    width: 100%;
+}
+
+article.contact>.left {
+    display: flex;
+    align-self: center;
+    justify-content: space-around;
+}
+
+article.contact>.left>div {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+
+}
+
+article.contact>.left>div i {
+    font-size: 8rem;
+    color: #F8EBFF;
+    transition: 0.5s;
+}
+
+.left div a i:hover {
+    color: #79699e;
+}
+
+article.contact>.right {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-self: center;
+}
+
+article.contact>.right form {
+    width: 100%;
+}
+
+article.contact>.right input,
+article.contact>.right button,
+article.contact>.right textarea {
+    color: #405263;
+    font-family: 'Nunito', sans-serif;
+    font-size: 2rem;
+    padding: 15px;
+    margin: 15px 0;
+    background-color: #fff;
+    border: 2px solid #79699e;
+    border-radius: 10px;
+}
+
+article.contact>.right button {
+    cursor: pointer;
+}
+
+.area {
+    width: 55%;
+    border: 2px outset #fff;
+    font-size: 2rem;
+    color: #405263;
+    font-family: 'Nunito', sans-serif;
+    background-color: #ebebeb;
+}
+
+button.area {
+    width: 60%;
+}
+
+textarea.area {
+    margin-top: 15px;
+}
+
+@media (max-width:767px) {
+    body {
+        width: 100%;
+    }
+
+    article.contact>.left>div {
+        flex-wrap: wrap;
+    }
+
+    article.contact>.left>div a {
+        padding: 10px 80px;
+    }
+}
+
+@media (max-width:767px) {
+    .contact {
+        flex-direction: column;
+    }
+
+    article.contact>.right input,
+    article.contact>.right textarea {
+        width: 91%;
+    }
+
+    article.contact>.right button {
+        width: 100%;
+    }
+}
+
+img.project-05 {
+    width: 20rem;
+    height: 15rem;
+}
+
+p {
+    text-align: center;
+}
+
+.portfolio-art {
+    display: flex;
+    align-items: center;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    background-color: rgb(172, 147, 231);
+    color: #405263;
+    font-family: 'Playfair Display', serif;
+    letter-spacing: 0.2em;
+
+
+}
+
+.my_projects button {
+    display: flex;
+    flex-direction: row;
+    font-family: 'Nunito', sans-serif;
+    font-size: 1.6rem;
+    color: #405263;
+    margin-top: 2rem;
+    margin: 10px auto;
+    padding: 10px;
+    background-color: #ebebeb;
+}
+
+@media screen and (min-width:768px) {
+    .container {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-around;
+        width: 768px;
+
+    }
+}
+
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #ebebeb;
+    font-family: 'Playfair Display', serif;
+    padding: 20px 0;
+
+}
