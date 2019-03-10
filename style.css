@@ -195,6 +195,7 @@ article.me strong {
 .skills>div {
     display: flex;
     align-self: center;
+    justify-content: center;
     flex-flow: column wrap;
 }
 
@@ -206,6 +207,17 @@ article.me strong {
 }
 
 @media (min-width:768px) {
+    .skills>div {
+        flex-flow: row wrap;
+        max-width: 768px;
+    }
+
+    article.contact>.right button {
+        width: 60%;
+    }
+}
+
+@media (max-width: 768px) {
     .skills>div {
         flex-flow: row wrap;
         max-width: 768px;
@@ -260,6 +272,12 @@ article.contact>.right form {
     width: 100%;
 }
 
+article.contact>.right form div {
+    display: flex;
+    justify-content: center;
+}
+
+
 article.contact>.right input,
 article.contact>.right button,
 article.contact>.right textarea {
@@ -286,9 +304,9 @@ article.contact>.right button {
     background-color: #ebebeb;
 }
 
-button.area {
-    width: 60%;
-}
+/* button.area {
+    width: 100%;
+} */
 
 textarea.area {
     margin-top: 15px;
@@ -299,13 +317,26 @@ textarea.area {
         width: 100%;
     }
 
+    /* .skills div i {
+        padding: 3rem 100rem;
+    } */
+
     article.contact>.left>div {
         flex-wrap: wrap;
     }
 
     article.contact>.left>div a {
-        padding: 10px 80px;
+        padding: 5rem 4rem;
+
     }
+
+    article.contact>.right input,
+    article.contact>.right textarea {
+        padding: 12px;
+
+    }
+
+    article.contact>.right button {}
 }
 
 @media (max-width:767px) {
@@ -319,7 +350,7 @@ textarea.area {
     }
 
     article.contact>.right button {
-        width: 100%;
+        width: 99%;
     }
 }
 
