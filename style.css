@@ -58,7 +58,7 @@ header {
     align-items: flex-start
 }
 
-@media (min-width:768px) {
+@media (min-width:640px) {
     .navigation-menu {
         display: block !important;
 
@@ -66,7 +66,7 @@ header {
     }
 }
 
-@media (max-width:767px) {
+@media (max-width:639px) {
     .navigation {
         width: 100%;
         display: table-column;
@@ -192,7 +192,6 @@ article.me strong {
 }
 
 .skills>div {
-    color: #405263;
     display: flex;
     align-items: center;
     flex-flow: column wrap;
@@ -201,7 +200,8 @@ article.me strong {
 .skills div i {
     color: #405263;
     font-size: 8rem;
-    padding: 60px 80px;
+    /* margin: 5rem 8rem; */
+    padding: 1em 1em;
 }
 
 @media (min-width:768px) {
