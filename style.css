@@ -202,7 +202,6 @@ article.me strong {
 .skills div i {
     color: #405263;
     font-size: 8rem;
-    /* margin: 5rem 8rem; */
     padding: 1em 1em;
 }
 
@@ -304,10 +303,6 @@ article.contact>.right button {
     background-color: #ebebeb;
 }
 
-/* button.area {
-    width: 100%;
-} */
-
 textarea.area {
     margin-top: 15px;
 }
@@ -316,10 +311,6 @@ textarea.area {
     body {
         width: 100%;
     }
-
-    /* .skills div i {
-        padding: 3rem 100rem;
-    } */
 
     article.contact>.left>div {
         flex-wrap: wrap;
@@ -335,8 +326,6 @@ textarea.area {
         padding: 12px;
 
     }
-
-    article.contact>.right button {}
 }
 
 @media (max-width:767px) {
