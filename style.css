@@ -378,7 +378,7 @@ p {
     cursor: pointer;
 }
 
-@media screen and (min-width:768px) {
+@media screen and (min-width:320px) {
     .container {
         display: flex;
         flex-flow: row wrap;
@@ -387,6 +387,7 @@ p {
 
     }
 }
+
 
 footer {
     display: flex;
