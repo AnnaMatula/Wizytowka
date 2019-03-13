@@ -197,12 +197,19 @@ article.me strong {
     align-self: center;
     justify-content: center;
     flex-flow: column wrap;
+
 }
 
 .skills div i {
     color: #405263;
     font-size: 8rem;
     padding: 1em 1em;
+    transition-property: transform;
+    transition-duration: 1s;
+}
+
+.skills div i:hover {
+    transform: rotateY(360deg);
 }
 
 @media (min-width:768px) {
@@ -253,11 +260,13 @@ article.contact>.left>div {
 article.contact>.left>div i {
     font-size: 8rem;
     color: #F8EBFF;
-    transition: 0.5s;
+    transition-property: transform;
+    transition-duration: 0.8s;
 }
 
 .left div a i:hover {
     color: #79699e;
+    transform: rotateY(360deg);
 }
 
 article.contact>.right {
